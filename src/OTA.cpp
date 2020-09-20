@@ -35,6 +35,7 @@ void OTAClass::setDefault() {
     setPort(8266);
     setPassword("");
     setHostname("esp8266");
+    setDebug(false);
 }
 
 void OTAClass::setPort(int port) {
@@ -49,7 +50,11 @@ void OTAClass::setHostname(String hostname) {
     this -> hostname = hostname;
 }
 
-void OTAClass::Begin(bool debug = true) {
+void OTAClass::setDebug(bool debug) {
+    this->debug = debug;
+}
+
+void OTAClass::Begin() {
     ArduinoOTA.setPort(port);
     ArduinoOTA.setHostname(hostname.c_str());
 

@@ -9,6 +9,7 @@ private:
     int port;
     String password;
     String hostname;
+    bool debug;
 
     void setDefault();
 
@@ -24,8 +25,9 @@ public:
     void setPort(int port);
     void setHostname(String hostname);
     void setPassword(String password);
+    void setDebug(bool debug);
 
-    void Begin(bool debug);
+    void Begin();
     void Loop();
 };
 
