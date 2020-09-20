@@ -14,6 +14,10 @@ OTA	KEYWORD1	OTA
 #######################################
 Begin	KEYWORD2
 Loop	KEYWORD2
+setPort	KEYWORD2
+setHostname	KEYWORD2
+setPassword	KEYWORD2
+setDebug	KEYWORD2
 
 #######################################
 # Constants (LITERAL1)
